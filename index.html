@@ -8,8 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
+</head><body>
 
   <nav>
   <div class="nav-left">
@@ -57,10 +56,10 @@
       <div class="timeline-dot"></div>
       <div class="job">
         <div class="job-header">
-          <img src="assets/wells-fargo.svg" alt="Wells Fargo" class="job-logo">
+          <a href="https://www.wellsfargo.com/" target="_blank"><img src="assets/wells-fargo.svg" alt="Wells Fargo" class="job-logo"></a>
           <h3>Software Engineering Intern</h3>
         </div>
-        <p class="company">Wells Fargo</p>
+        <a href="https://www.wellsfargo.com/" target="_blank"><p class="company">Wells Fargo</p></a>
         <p class="dates">Incoming Summer 2026</p>
         <ul class="description"><li>Incoming SWE Intern for Wells Fargo in Charlotte, NC</li></ul>
       </div>
@@ -77,10 +76,10 @@
       <div class="timeline-dot"></div>
       <div class="job">
         <div class="job-header">
-          <img src="assets/godaddy-1.svg" alt="GoDaddy" class="job-logo">
+          <a href="https://www.godaddy.com/" target="_blank"><img src="assets/godaddy.jpeg" alt="GoDaddy" class="job-logo"></a>
           <h3>Software Development Engineer Intern</h3>
         </div>
-        <p class="company">GoDaddy</p>
+        <a href="https://www.godaddy.com/" target="_blank"><p class="company">GoDaddy</p></a>
         <p class="dates">May 2025 – August 2025</p>
         <ul class="description">
           <li>Developed frontend Android features using Java and Kotlin for GoDaddy POS Terminals, contributing to the full app lifecycle with the Android team</li>
@@ -101,10 +100,10 @@
       <div class="timeline-dot"></div>
       <div class="job">
         <div class="job-header">
-          <img src="assets/washu_eng.jpg" alt="WashU" class="job-logo">
+          <a href="https://engineering.washu.edu/offices-services/student-services/undergraduate-student-services/index.html" target="_blank"><img src="assets/washu_eng.jpg" alt="WashU" class="job-logo"></a>
           <h3>Tutor for Introduction to Computer Science</h3>
         </div>
-        <p class="company">WashU Engineering Undergraduate Student Services</p>
+        <a href="https://engineering.washu.edu/offices-services/student-services/undergraduate-student-services/index.html" target="_blank"><p class="company">WashU Engineering Undergraduate Student Services</p></a>
         <p class="dates">August 2024 – Current</p>
         <ul class="description">
           <li>Tutor students on crucial concepts in one-on-one sessions</li>
@@ -117,25 +116,52 @@
 </section>
 
   <section id="projects">
+  <div id="particles-js"></div>
+
+  <div class="projects-inner">
     <h2>Projects</h2>
+
     <div class="projects-grid">
 
-      <div class="project">
-        <img src="assets/images/project1.jpg" alt="Project 1" >
-        <h3>Campus Creamery App</h3>
-        <p>Expo * React * TypeScript * JavaScript * Firebase</p>
-        <p>Led five students to develop a CRUD app for iOS that displays consumer data and event promotion for WashU’s on campus ice cream store and released it to the app store</p>
-      </div>
-
-      <div class="project">
-        <img src="assets/images/project2.jpg" alt="Project 2">
-        <h3>Blackjack 101</h3>
-        <p>Deck of Cards API * React * JavaScript * CSS</p>
-        <p>Built a simulator with interactive gameplay and real-time win/loss tracking, incorporating logic for the player and the automated house while applying state management and conditional rendering to showcase mechanics. Website also teachs about the rules, history, and strategies of Blackjack</p>
-      </div>
-
+      <div class="project-card">
+  <div class="project-img-wrap">
+    <a href="https://docs.google.com/presentation/d/11xE5s5yYiKFH0TKnkQGeAHgrX-NZVVPcOyjRfGdyx40/edit?slide=id.g34fafc76737_0_708#slide=id.g34fafc76737_0_708" target="_blank">
+      <img src="assets/creamery.jpg" alt="Campus Creamery App">
+    </a>
+  </div>
+  <div class="project-body">
+    <h3>Campus Creamery App</h3>
+    <div class="project-tags">
+      <span class="tag">Expo</span>
+      <span class="tag">React</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Firebase</span>
     </div>
-  </section>
+    <p class="project-desc"><strong>Led five students to develop and release a CRUD app to the iOS App Store that displays consumer data and event promotion for WashU's on campus ice cream store.</strong></p>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-img-wrap">
+    <a href="https://sgwollitzer.github.io/Blackjack-101/" target="_blank">
+      <img src="assets/cards.png" alt="Blackjack 101">
+    </a>
+  </div>
+  <div class="project-body">
+    <h3>Blackjack 101</h3>
+    <div class="project-tags">
+      <span class="tag">Deck of Cards API</span>
+      <span class="tag">React</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">CSS</span>
+    </div>
+    <p class="project-desc"><strong>Built a simulator with interactive gameplay and real-time win/loss tracking, incorporating logic for the player and the automated house. Website also teaches the rules, history, and strategies of Blackjack.</strong></p>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
 
   <section id="skills">
     <h2>Skills</h2>
@@ -172,7 +198,8 @@
       </li>
     </ul>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
