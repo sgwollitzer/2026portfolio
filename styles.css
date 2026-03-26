@@ -1,8 +1,12 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  cursor:default;
 }
 
+a, a *{
+  cursor:pointer;
+}
 :root {
   --pWhite: rgb(250, 245, 240);
   --sWhite: rgb(247, 236, 225);
@@ -535,7 +539,6 @@ nav {
   display: none;
 }
 
-/* SKILLS */
 
 #skills{
   border-radius: 32px;
@@ -969,4 +972,14 @@ nav {
     width: 80%;
     margin: 16px auto 0;
   }
+}
+#skills h2::after, #experience h2::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
 }
